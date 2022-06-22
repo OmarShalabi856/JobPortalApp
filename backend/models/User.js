@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const userSchema = mongoose.Schema({
     firstName:{
         type:String,
@@ -14,6 +13,7 @@ const userSchema = mongoose.Schema({
         type:String,
         required:[true,'Email cannot be blank'],
         unique:true
+    
     },
     password:{
         type:String,
@@ -28,5 +28,7 @@ const userSchema = mongoose.Schema({
         required:[true,'Educational Institute cannot be blank']
     }
 })
+
+
 
 module.exports = mongoose.model('User',userSchema)
