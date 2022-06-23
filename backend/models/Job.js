@@ -31,6 +31,10 @@ const jobSchema = mongoose.Schema({
         type:String,
         enum:['Remote','On-site','Hybrid'],
         required:[true,'Workplace cannot be blank']
+    },
+    category:{
+        type:String,
+        enum:['Agriculture','Architecture','Arts','Communication','Business and Finance','Education','Health Science','IT','Engineering']
     }
 
 })
