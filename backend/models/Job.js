@@ -5,6 +5,10 @@ const jobSchema = mongoose.Schema({
         type:String,
         required:[true,'Title cannot be blank']
     },
+    email:{
+        type:String,
+        required:[true,'Email cannot be blank']
+    },
     company:{
         type:String,
         required:[true,'Company cannot be blank']
